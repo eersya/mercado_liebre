@@ -9,7 +9,7 @@ const PORT = 3030;
 
 app.use(express.static('public'));
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
     console.log('Servidor corriendo en el puerto ' + PORT);
 });
 
